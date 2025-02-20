@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "scripts": {
     "start": "webpack serve",
-    "build": "webpack --mode production"
+    "build": "webpack --mode production",
+    "deploy": "npm run build && git add docs && git commit -m 'Update GitHub Pages' && git push origin main"
   },
   "directories": {
     "doc": "docs"
